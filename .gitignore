@@ -1,10 +1,2 @@
-.temporary_cache
-gulp
-node_modules
-src
-.babelrc
-gulpfile.js
-package-lock.json
-package.json
 README.md
-webpack.config.js
+node_modules

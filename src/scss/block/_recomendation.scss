@@ -1,0 +1,296 @@
+.recomendation{
+    position: relative;
+    padding-top: 40px;
+    margin-bottom: 120px;
+    &__content{}
+    &__head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        @include m-tablet{
+            flex-direction: column;
+            align-items: flex-start;
+            width: 600px;
+            padding-left: 100px;
+        }
+        @include m-tablet{
+            width: 300px;
+            padding-left: 50px;
+        }
+    }
+    &__header{
+        width: 100%;
+        @include m-tablet{
+            width: auto;
+        }
+    }
+    &__subtitle{
+        margin-bottom: 12px;
+    }
+    &__title{
+        @include m-tablet{
+            margin-bottom: 40px;
+        }
+    }
+    &__bar{
+        display: flex;
+        align-items: center;
+        margin-right: 140px;
+        @include m-tablet-wide{
+            margin-right: 70px;
+        }
+        @include m-tablet{
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        @include m-phone{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    &__btn{
+        &-link{
+            display: flex;
+            align-items: center;
+            padding: 14px 24px;
+            border: 1px solid #E0E3EB;
+            border-radius: 32px;
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: #888B97;
+            @include m-phone{
+                width: 200px;
+            }
+        }
+        &-pic{
+            width: 18px;
+            height: 18px;
+            fill: #888B97;
+            stroke: #888B97;
+            margin-right: 8px;
+        }
+    }
+    &__btn:not(:last-child){
+        margin-right: 32px;
+        @include m-phone{
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+    }
+    &__swiper-navigation{
+        display: flex;
+        @include m-tablet{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    &__nav-btn{
+        width: 60px;
+        height: 52px;
+        background: #E0E3EB;
+        border-radius: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    &__nav-btn:not(:last-child){
+        margin-right: 16px;
+    }
+    &__arrow-prev{
+        width: 8px;
+        height: 16px;
+        transform: rotate(180deg);
+        fill: #3C4563;
+        stroke: #3C4563;;
+    }
+    &__arrow-next{
+        width: 8px;
+        height: 16px;
+    }
+    &__slider{
+        &-wrapper{}
+    }
+    &__slide{
+        &-photo{
+            position: relative;
+            width: 340px;
+            height: 382px;
+            margin-bottom: 24px;
+        }
+        &-img{
+            position: relative;
+            z-index: 1;
+            width: 340px;
+            height: 382px;
+            z-index: 5;
+            overflow: hidden;
+            border-radius: 24px;
+        }
+        &-pic{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-tag{
+            position: absolute;
+            left: 16px;
+            bottom: 16px;
+            z-index: 5;
+        }
+        &-title{
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            color: #0E1735;
+            margin-bottom: 8px;
+        }
+        &-price{
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 32px;
+            color: #3C4563;
+            margin-bottom: 24px;
+        }
+        &-owner{
+            display: flex;
+            align-items: center;
+        }
+        &-avatar{
+            width: 40px;
+            height: 40px;
+            margin-right: 16px;
+        }
+        &-photo{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-profile{
+            display: flex;
+            flex-direction: column;
+        }
+        &-name{
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: #0E1735;
+            margin-bottom: 4px;
+        }
+        &-location{
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #888B97;
+        }
+
+    }
+    
+
+}
+
+.popular{
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FEE2E2;
+    border-radius: 32px;
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #EF4444;
+    &-pic{
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.new{
+    background: #DBEAFE;
+    color: #1D4ED8;
+}
+
+.best{
+    background: #D1FAE5;
+    color: #047857;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.frame-subtitle{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #F59E0B;
+    display: flex;
+    align-items: center;
+    transform: translateX(-40px);
+    
+    &::before{
+        content: '';
+        display: flex;
+        align-items: center;
+        transform: scale(1, -1);
+        width: 32px;
+        border: 1px solid #F59E0B;
+        margin-right: 8px;
+    }
+}
+.frame-title{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #1B1C57;
+    
+}
+
+.green{
+    background: #10B981;
+}
