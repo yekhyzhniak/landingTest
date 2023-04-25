@@ -111,20 +111,19 @@ const openingSwiper = new Swiper('.opening__left-slider', {
 })
 
 
-const swiper = new Swiper('.recomendation__slider', {
+const recomendation = new Swiper('.recomendation__slider', {
     loop: true,
     navigation: {
         nextEl: '.swiper-next',
         prevEl: '.swiper-prev',
     },
-    slidesPerView: 3.1,
-    spaceBetwenn: 40,
+    slidesPerView: 3,
     breakpoints: {
         1200: {
             slidesPerView: 3,
         },
         1024: {
-            slidesPerView: 2.4,
+            slidesPerView: 2.5,
         },
         768: {
             slidesPerView: 2,
@@ -137,7 +136,7 @@ const swiper = new Swiper('.recomendation__slider', {
 
 const sellSwiper = new Swiper('.readytosell__wrapper', {
     loop: true,
-    spaceBetwenn: 100,
+    spaceBetwenn: 200,
     autoplay: {
         delay: 5000,
         stopOnLastSlide: false,

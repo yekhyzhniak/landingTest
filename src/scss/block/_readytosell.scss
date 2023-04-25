@@ -3,7 +3,7 @@
     width: 100%;
     margin-bottom: 120px;
     @include m-tablet{
-        width: 700px;
+        
         margin: 0 auto;
     }
     @include m-phone{
@@ -13,32 +13,33 @@
         width: 100%;
     }
     &__content{
-        width: 100%;
+        position: relative;
     }
     &__item{
         width: 100%;
+        
         &-content{
             position: relative;
             width: 100%;
             display: flex;
             justify-content: space-between;
+            
             @include m-tablet{
                 flex-direction: column;
                 align-items: center;
             }
         }
         &-info{
-            padding: 28px 28px 28px 35px;
+            padding: 28px 28px 28px 40px;
             @include m-tablet{
+                width: 100%;
                 margin-bottom: 30px;
                 padding: 0;
+                padding: 0 40px;
             }
         }
         &-subtitle{
             margin-bottom: 12px;
-            position: absolute;
-            top: 0;
-            left: 0;
         }
         &-title{
             margin-bottom: 16px;
@@ -72,6 +73,11 @@
             width: 440px;
             height: 80px;
             margin-bottom: 68px;
+            @include m-phone{
+                width: 330px;
+                height: auto;
+                margin-bottom: 32px;
+            }
         }
         &-param{
             display: flex;
@@ -95,9 +101,16 @@
         }
         &-contact{
             display: flex;
+            @include m-phone{
+                flex-direction: column;
+            }
         }
         &-owner{
             margin-right: 60px;
+            @include m-phone{
+                margin-right: 0;
+                margin-bottom: 24px;
+            }
         }
         &-btn{}
         &-pics{
@@ -106,6 +119,13 @@
             height: 459px;
             @include m-tablet{
                 margin: 0 auto;
+            }
+            @include m-phone{
+                //
+
+                
+                    
+
             }
         }
         &-biggest{
@@ -127,6 +147,12 @@
                 z-index: 2;
                 background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0, 0.5) 100%);
                 }
+            @include m-phone{
+                position: relative;
+                width: 375px;
+                height: auto;
+
+            }
         }
         &-medium{
             position: absolute;
@@ -137,6 +163,9 @@
             z-index: 3;
             border-radius: 4px;
             overflow: hidden;
+            @include m-phone{
+                display: none;
+            }
         }
         &-littleone{
             position: absolute;
@@ -147,6 +176,9 @@
             z-index: 3;
             border-radius: 4px;
             overflow: hidden;
+            @include m-phone{
+                display: none;
+            }
         }
         &-littletwo{
             position: absolute;
@@ -157,6 +189,9 @@
             z-index: 3;
             border-radius: 4px;
             overflow: hidden;
+            @include m-phone{
+                display: none;
+            }
         }
     }
 }

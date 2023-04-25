@@ -15,6 +15,7 @@
         }
         @include m-phone{
             width: 375px;
+            
         }
     }
     &__logo{
@@ -22,6 +23,9 @@
         align-items: center;
         @include m-phone{
             margin-bottom: 24px;
+            position: absolute;
+            top: 50px;
+            left: 40px;
         }
         &-link{
             display: flex;
@@ -47,7 +51,7 @@
         @include m-phone{
             flex-direction: column;
             height: 100%;
-            padding: 80px 0 0 20px;
+            padding: 120px 0 0 0;
             margin: 0 auto;
             border-left: 2px solid #000;
             height: 100vh;
@@ -78,16 +82,18 @@
         @include m-laptop{
             margin-right: 24px;
         }
+
         @include m-phone{
             margin-right: 0;
             margin-bottom: 24px;
             flex-direction: column;
         }
     }
-    &__item{}
+    &__item{
+    }
     &__item:not(:last-child){
         margin-right: 24px;
-        @include m-tablet{
+        @include m-phone{
             margin-right: 0;
             margin-bottom: 24px;
         }
