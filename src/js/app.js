@@ -90,7 +90,6 @@ isWebp()
 
 
 document.querySelector('.js-menu-btn').onclick = function () {
-    console.log(1)
     this.classList.toggle('actived');
     document.querySelector('body').classList.toggle('overflow');
     document.querySelector('.js-header').classList.toggle('show-menu');
