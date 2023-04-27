@@ -153,7 +153,27 @@ const sellSwiper = new Swiper('.readytosell__wrapper', {
             });
         }
     },
-})
+});
+
+const reviewSlider = new Swiper('.review__slider', {
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    spaceBetwenn: 56,
+    centeredSlides: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        375: {
+            slidersPerView: 1,
+            centeredSlides: true,
+        }
+    }
+});
+
+
 
 
 

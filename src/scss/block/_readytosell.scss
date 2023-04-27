@@ -3,8 +3,8 @@
     width: 100%;
     margin-bottom: 120px;
     @include m-tablet{
-        
         margin: 0 auto;
+        margin-bottom: 60px;
     }
     @include m-phone{
         width: 330px;
@@ -121,11 +121,7 @@
                 margin: 0 auto;
             }
             @include m-phone{
-                //
-
-                
-                    
-
+                height: 320px;
             }
         }
         &-biggest{
