@@ -1,6 +1,7 @@
 .partnership{
     position: relative;
     width: 100%;
+    margin-bottom: 120px;
     &__header{
         display: flex;
         flex-direction: column;
@@ -33,8 +34,10 @@
         }
     }
     &__content{
+        position: relative;
         display: flex;
         justify-content: space-between;
+        z-index: 2;
         @include m-tablet{
             flex-direction: column-reverse;
             align-items: center;
@@ -209,4 +212,34 @@
         }
     }
     
+}
+
+.vector5{
+    width: 438px;
+    height: 494px;
+    position: absolute;
+    left: -290px;
+    top: -55px;
+    z-index: -1;
+    &-img{
+        width: 100%;
+        height: 100%;
+        filter: blur(60px);
+        transform: rotate(90deg);
+    }
+}
+
+.vector6{
+    width: 438px;
+    height: 494px;
+    position: absolute;
+    left: -262px;
+    top: 202px;
+    z-index: 1;
+    &-img{
+        width: 100%;
+        height: 100%;
+        filter: blur(60px);
+        transform: rotate(90deg);
+    }
 }
