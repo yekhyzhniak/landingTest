@@ -523,6 +523,7 @@ body.lock {
 
 .opening {
   position: relative;
+  margin-bottom: 40px;
 }
 .opening__content {
   position: relative;
@@ -832,8 +833,17 @@ body.lock {
 
 .recomendation {
   position: relative;
-  padding-top: 40px;
   margin-bottom: 120px;
+}
+@media (max-width: 1023px) {
+  .recomendation {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .recomendation {
+    margin-bottom: 30px;
+  }
 }
 .recomendation__head {
   display: flex;
@@ -1139,6 +1149,7 @@ body.lock {
 @media (max-width: 767px) {
   .readytosell {
     width: 330px;
+    margin-bottom: 30px;
   }
 }
 .readytosell__wrapper {
@@ -1406,6 +1417,11 @@ body.lock {
     margin-bottom: 60px;
   }
 }
+@media (max-width: 767px) {
+  .review {
+    margin-bottom: 30px;
+  }
+}
 .review__header {
   display: flex;
   flex-direction: column;
@@ -1580,6 +1596,16 @@ body.lock {
   position: relative;
   width: 100%;
   margin-bottom: 120px;
+}
+@media (max-width: 1023px) {
+  .partnership {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .partnership {
+    margin-bottom: 30px;
+  }
 }
 .partnership__header {
   display: flex;
@@ -1838,6 +1864,16 @@ body.lock {
   position: relative;
   margin-bottom: 120px;
 }
+@media (max-width: 1023px) {
+  .feedback {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback {
+    margin-bottom: 30px;
+  }
+}
 .feedback__wrapper {
   position: relative;
   width: 100%;
@@ -2088,4 +2124,152 @@ body.lock {
   .ico8 {
     display: none;
   }
+}
+
+.footer {
+  position: relative;
+  margin: 0 auto;
+}
+.footer__container {
+  position: relative;
+  width: 1230px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+@media (max-width: 1439px) {
+  .footer__container {
+    width: 1024px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 1023px) {
+  .footer__container {
+    padding-bottom: 30px;
+    width: 768px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  .footer__container {
+    width: 375px;
+  }
+}
+.footer__media {
+  max-width: 320px;
+}
+@media (max-width: 1023px) {
+  .footer__media {
+    margin-bottom: 24px;
+    max-width: 600px;
+  }
+}
+@media (max-width: 1023px) {
+  .footer__media {
+    max-width: 330px;
+  }
+}
+.footer__media-logo {
+  margin-bottom: 16px;
+}
+@media (max-width: 1023px) {
+  .footer__media-logo {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+.footer__media-dscr {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626687;
+  opacity: 0.75;
+  margin-bottom: 24px;
+  z-index: 5;
+}
+.footer__media-socials {
+  display: flex;
+  z-index: 5;
+}
+.footer__media-link {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.footer__media-link:not(:last-child) {
+  margin-right: 24px;
+}
+.footer__row {
+  display: flex;
+  z-index: 5;
+}
+@media (max-width: 1023px) {
+  .footer__row {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .footer__row {
+    flex-direction: column;
+  }
+}
+.footer__row-item {
+  max-width: 270px;
+  z-index: 5;
+}
+.footer__row-item:not(:last-child) {
+  margin-right: 88px;
+}
+@media (max-width: 1023px) {
+  .footer__row-item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer__row-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.footer__row-title {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #0E1735;
+  margin-bottom: 24px;
+}
+.footer__row-text {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #888B97;
+}
+.footer__row-text:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.vector7 {
+  right: -315px;
+  top: -87px;
+  z-index: -1;
+}
+
+.vector8 {
+  right: -69px;
+  top: -22px;
+  z-index: 1;
 }

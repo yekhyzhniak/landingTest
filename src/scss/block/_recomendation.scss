@@ -1,7 +1,12 @@
 .recomendation{
     position: relative;
-    padding-top: 40px;
     margin-bottom: 120px;
+    @include m-tablet{
+        margin-bottom: 60px;
+    }
+    @include m-phone{
+        margin-bottom: 30px;
+    }
     &__content{}
     &__head{
         display: flex;

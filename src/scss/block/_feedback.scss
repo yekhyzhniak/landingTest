@@ -1,6 +1,12 @@
 .feedback{
     position: relative;
     margin-bottom: 120px;
+    @include m-tablet{
+        margin-bottom: 60px;
+    }
+    @include m-phone{
+        margin-bottom: 30px;
+    }
     &__wrapper{
         position: relative;
         width: 100%;

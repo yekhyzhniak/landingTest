@@ -5,6 +5,9 @@
     @include m-tablet{
         margin-bottom: 60px;
     }
+    @include m-phone{
+        margin-bottom: 30px;
+    }    
     &__content{}
     &__header{
         display: flex;
