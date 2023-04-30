@@ -26,20 +26,25 @@
             padding-left: 0;
             padding: 0 40px;
         }
+        @include m-phone{
+            padding: 0;
+        }
     }
     &__header{
         width: 100%;
         @include m-tablet{
             width: auto;
+            margin-bottom: 20px;
+        }
+        @include m-phone{
+            padding: 0 40px;
         }
     }
     &__subtitle{
         margin-bottom: 12px;
     }
     &__title{
-        @include m-tablet{
-            margin-bottom: 40px;
-        }
+        @include m-tablet{}
     }
     &__bar{
         display: flex;
@@ -51,12 +56,10 @@
         @include m-tablet{
             margin-right: 0;
             margin: 0 auto;
-            margin-bottom: 40px;
-            
+            margin-bottom: 20px;
         }
         @include m-phone{
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             width: 100%;
         }
     }
@@ -74,7 +77,9 @@
             line-height: 28px;
             color: #888B97;
             @include m-phone{
-                width: 200px;
+                width: auto;
+                padding: 8px 12px;
+                font-size: 14px;
             }
         }
         &-pic{
@@ -83,13 +88,16 @@
             fill: #888B97;
             stroke: #888B97;
             margin-right: 8px;
+            @include m-phone{
+                width: 14px;
+                height: 14px;
+            }
         }
     }
     &__btn:not(:last-child){
         margin-right: 32px;
         @include m-phone{
             margin-right: 0;
-            margin-bottom: 24px;
         }
     }
     &__swiper-navigation{

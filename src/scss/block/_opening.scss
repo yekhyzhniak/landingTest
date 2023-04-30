@@ -4,14 +4,12 @@
     &__content{
         position: relative;
         display: flex;
-        width: 1920px;
+        width: 1230px;
+        padding: 0 15px;
         height: 800px;
         left: 50%;
         transform: translateX(-50%);
         margin-top: -86px;
-        @include m-desktop-small{
-            width: 1440px;
-        }
         @include m-laptop{
             width: 1024px;
         }
@@ -42,7 +40,6 @@
             margin-bottom: 30px;
         }
         &-content{
-            margin: 0 auto;
             width: 500px;
             @include m-tablet-wide{
                 padding: 0 10px;
@@ -122,9 +119,7 @@
                 justify-content: center;
             }
             @include m-phone{
-                flex-direction: column;
-                align-items: center;
-                width: auto;
+                flex-wrap: wrap;
             }
         }
         &-item{
@@ -138,10 +133,14 @@
             margin-right: 32px;
             @include m-phone{
                 margin-right: 0;
-                margin-bottom: 32px;
+                margin-bottom: 0;
             }
         }
         &-link{
+            @include m-phone{
+                display: block;
+                padding: 0 20px;
+            }
             
         }
         &-linkpic{
@@ -208,6 +207,15 @@
                 padding: 150px 20px 67px;
             }
         }
+        &-slider{
+            width: 1000px;
+            @include m-tablet{
+                width: 760px;
+            }
+            @include m-phone{
+                width: 345px;
+            }
+        }
     }
     &__slide{
         padding: 24px;
@@ -218,7 +226,7 @@
         align-items: center;
         height: 120px;
         max-width: 330px;
-        margin-right: 16px;
+        // margin-right: 16px;
         // width: auto;
         cursor: pointer;
         @include m-phone{

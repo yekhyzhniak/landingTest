@@ -97,16 +97,14 @@ document.querySelector('.js-menu-btn').onclick = function () {
 
 
 const openingSwiper = new Swiper('.opening__left-slider', {
-    slidesPerView: 2.5,
+    slidesPerView: 2,
     autoplay: {
         delay: 3000,
         stopOnLastSlide: false,
     },
+    spaceBetween: 15,
     speed: 800,
     breakpoints: {
-        1440: {
-            slidesPerView: 2,
-        },
         1024: {
             slidesPerView: 1.5,
         },
