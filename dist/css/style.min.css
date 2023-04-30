@@ -338,7 +338,7 @@ body.lock {
 }
 @media (max-width: 767px) {
   .header__list {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-left: 40px;
   }
 }
@@ -354,8 +354,12 @@ body.lock {
 @media (max-width: 767px) {
   .header__row {
     margin-right: 0;
-    margin-bottom: 24px;
     flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .header__btn {
+    margin-bottom: 24px;
   }
 }
 .header__item:not(:last-child) {
@@ -384,6 +388,7 @@ body.lock {
   width: 7px;
   height: 14px;
   transform: rotate(90deg);
+  margin-left: 10px;
 }
 @media (max-width: 1023px) {
   .header__link-pic {
@@ -405,6 +410,24 @@ body.lock {
     justify-content: center;
     border-radius: 50%;
   }
+}
+.header__dropbox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+.header__dropbox-link {
+  padding: 8px 16px;
+  color: #4ca394 !important;
+  border-radius: 12px;
+}
+
+.dropbox-show {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .menu-btn {
@@ -502,6 +525,7 @@ body.lock {
 @media (max-width: 767px) {
   .signupBtn {
     width: 160px;
+    padding: 8px 16px;
   }
 }
 

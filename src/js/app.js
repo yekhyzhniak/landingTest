@@ -95,6 +95,10 @@ document.querySelector('.js-menu-btn').onclick = function () {
     document.querySelector('.js-header').classList.toggle('show-menu');
 }
 
+document.querySelector('.dropbox-item').onclick = function () {
+    document.querySelector('.header__dropbox').classList.toggle('dropbox-show');
+}
+
 
 const openingSwiper = new Swiper('.opening__left-slider', {
     slidesPerView: 2,

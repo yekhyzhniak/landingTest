@@ -71,10 +71,9 @@
         display: flex;
         align-items: center;
         @include m-phone{
-            flex-direction: column;
+            flex-direction: column-reverse;
             margin-left: 40px;
         }
-
     }
     &__row{
         display: flex;
@@ -85,8 +84,12 @@
 
         @include m-phone{
             margin-right: 0;
-            margin-bottom: 24px;
             flex-direction: column;
+        }
+    }
+    &__btn{
+        @include m-phone{
+            margin-bottom: 24px;
         }
     }
     &__item{
@@ -112,6 +115,7 @@
             width: 7px;
             height: 14px;
             transform: rotate(90deg);
+            margin-left: 10px;
             @include m-tablet{
                 stroke: #047857;
                 fill: #047857;
@@ -133,9 +137,25 @@
         border-radius: 50%;
         }
     }
+    &__dropbox{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+        opacity: 0;
+        transition: 0.5s;
+        &-link{
+            padding: 8px 16px;
+            color: #4ca394 !important;
+            border-radius: 12px;
+        }
+    }
 }
 
-
+.dropbox-show{
+    opacity: 1;
+    pointer-events: all;
+}
 
 .menu-btn {
 	width: 36px;
@@ -237,6 +257,7 @@
     }
     @include m-phone{
         width: 160px;
+        padding: 8px 16px;
     }
 }
 
