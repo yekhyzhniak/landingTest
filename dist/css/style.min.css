@@ -2259,6 +2259,13 @@ body.lock {
     left: 0;
   }
 }
+@media (max-width: 767px) {
+  .footer__media-logo {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
 .footer__media-dscr {
   font-family: "Lexend";
   font-style: normal;
