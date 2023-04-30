@@ -81,6 +81,9 @@
                 padding: 8px 12px;
                 font-size: 14px;
             }
+            &:hover{
+                background: #daefe4;
+            }
         }
         &-pic{
             width: 18px;
@@ -138,6 +141,7 @@
         }
     }
     &__slide{
+        cursor: pointer;
         
         &-photo{
             position: relative;
@@ -265,21 +269,6 @@
     color: #047857;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .frame-subtitle{
     font-family: 'Lexend';
     font-style: normal;
@@ -315,4 +304,12 @@
 
 .green{
     background: #10B981;
+}
+
+.background{
+    background: #D1FAE5;
+}
+
+.color{
+    color: #10B981;
 }

@@ -18,6 +18,7 @@
     }
     &__item{
         width: 100%;
+        cursor: pointer;
         
         &-content{
             position: relative;
@@ -205,6 +206,10 @@
     font-size: 14px;
     line-height: 22px;
     color: #FFFFFF;
+    @include m-phone{
+        width: 180px;
+        margin: 0 auto;
+    }
     &__pic{
         width: 24px;
         height: 24px;

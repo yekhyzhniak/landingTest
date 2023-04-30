@@ -32,7 +32,7 @@
                                                 <input name='search' type="text" class="opening__right-input"
                                                     placeholder="Search for the location you want!">
                                             </label>
-                                            <button class='opening__right-btn' type="submit">Search
+                                            <button class='opening__right-btn btn-green' type="submit">Search
                                                 <img src="./images/icons/arrow.svg" alt="arrow-right"
                                                     class="opening__right-arrow">
                                             </button>
@@ -328,7 +328,7 @@
                                 </div>
                                 <div class="recomendation__bar">
                                     <div class="recomendation__btn">
-                                        <a href="#" class="recomendation__btn-link">
+                                        <a href="#" class="recomendation__btn-link js-house" data="house">
                                             <svg class="recomendation__btn-pic">
                                                 <use xlink:href="./images/icons/icons.svg#house"></use>'svg'
                                             </svg>
@@ -336,7 +336,7 @@
                                         </a>
                                     </div>
                                     <div class="recomendation__btn">
-                                        <a href="#" class="recomendation__btn-link">
+                                        <a href="#" class="recomendation__btn-link js-villa" data="villa">
                                             <svg class="recomendation__btn-pic">
                                                 <use xlink:href="./images/icons/icons.svg#villa"></use>'svg'
                                             </svg>
@@ -344,7 +344,7 @@
                                         </a>
                                     </div>
                                     <div class="recomendation__btn">
-                                        <a href="#" class="recomendation__btn-link">
+                                        <a href="#" class="recomendation__btn-link js-apartment" data="apartment">
                                             <svg class="recomendation__btn-pic">
                                                 <use xlink:href="./images/icons/icons.svg#appartment"></use>'svg'
                                             </svg>
@@ -369,7 +369,7 @@
                             </div>
                             <div class="recomendation__slider swiper">
                                 <div class="recomendation__swiper-wrapper swiper-wrapper">
-                                    <div class="recomendation__slide swiper-slide">
+                                    <div class="recomendation__slide swiper-slide" data="house">
                                         <div class="recomendation__slide-photo">
                                             <div class="recomendation__slide-img">
                                                 <img src="./images/houses/house1.jpg" alt="house"
@@ -398,7 +398,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="recomendation__slide swiper-slide">
+                                    <div class="recomendation__slide swiper-slide" data="villa">
                                         <div class="recomendation__slide-photo">
                                             <div class="recomendation__slide-img">
                                                 <img src="./images/houses/house2.jpg" alt="house"
@@ -428,7 +428,277 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="recomendation__slide swiper-slide">
+                                    <div class="recomendation__slide swiper-slide" data="apartment">
+                                        <div class="recomendation__slide-photo">
+                                            <div class="recomendation__slide-img">
+                                                <img src="./images/houses/house3.jpg" alt="house"
+                                                    class="recomendation__swiper-pic">
+                                            </div>
+                                            <div class="recomendation__slide-tag">
+                                                <div class="popular best">
+                                                    <div class="popular-pic">
+                                                        <img src="./images/icons/money.svg" alt="tagpic"
+                                                            class="popular-img">
+                                                    </div>
+                                                    Best Deals
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recomendation__slide-title">The Old Lighthouse</div>
+                                        <div class="recomendation__slide-price">$ 44.000.000</div>
+                                        <div class="recomendation__slide-owner">
+                                            <div class="recomendation__slide-avatar">
+                                                <img src="./images/owner/owner3.jpg" alt="owner"
+                                                    class="recomendation__slide-photo">
+                                            </div>
+                                            <div class="recomendation__slide-profile">
+                                                <div class="recomendation__slide-name">Ronald Richards</div>
+                                                <div class="recomendation__slide-location">Santa Ana, Illinois
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="recomendation__slide swiper-slide" data="house">
+                                        <div class="recomendation__slide-photo">
+                                            <div class="recomendation__slide-img">
+                                                <img src="./images/houses/house1.jpg" alt="house"
+                                                    class="recomendation__swiper-pic">
+                                            </div>
+                                            <div class="recomendation__slide-tag">
+                                                <div class="popular">
+                                                    <div class="popular-pic">
+                                                        <img src="./images/icons/popular.svg" alt="tagpic"
+                                                            class="popular-img">
+                                                    </div>
+                                                    Popular
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recomendation__slide-title">Roselands House</div>
+                                        <div class="recomendation__slide-price">$ 35.000.000</div>
+                                        <div class="recomendation__slide-owner">
+                                            <div class="recomendation__slide-avatar">
+                                                <img src="./images/owner/owner1.jpg" alt="owner"
+                                                    class="recomendation__slide-photo">
+                                            </div>
+                                            <div class="recomendation__slide-profile">
+                                                <div class="recomendation__slide-name">Dianne Russell</div>
+                                                <div class="recomendation__slide-location">Manchester, Kentucky</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recomendation__slide swiper-slide" data="villa">
+                                        <div class="recomendation__slide-photo">
+                                            <div class="recomendation__slide-img">
+                                                <img src="./images/houses/house2.jpg" alt="house"
+                                                    class="recomendation__swiper-pic">
+                                            </div>
+                                            <div class="recomendation__slide-tag">
+                                                <div class="popular new">
+                                                    <div class="popular-pic">
+                                                        <img src="./images/icons/new.svg" alt="tagpic"
+                                                            class="popular-img">
+                                                    </div>
+                                                    New House
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recomendation__slide-title">Woodlandside</div>
+                                        <div class="recomendation__slide-price">$ 20.000.000</div>
+                                        <div class="recomendation__slide-owner">
+                                            <div class="recomendation__slide-avatar">
+                                                <img src="./images/owner/owner2.jpg" alt="owner"
+                                                    class="recomendation__slide-photo">
+                                            </div>
+                                            <div class="recomendation__slide-profile">
+                                                <div class="recomendation__slide-name">Robert Fox</div>
+                                                <div class="recomendation__slide-location">Dr. San Jose, South Dakota
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recomendation__slide swiper-slide" data="apartment">
+                                        <div class="recomendation__slide-photo">
+                                            <div class="recomendation__slide-img">
+                                                <img src="./images/houses/house3.jpg" alt="house"
+                                                    class="recomendation__swiper-pic">
+                                            </div>
+                                            <div class="recomendation__slide-tag">
+                                                <div class="popular best">
+                                                    <div class="popular-pic">
+                                                        <img src="./images/icons/money.svg" alt="tagpic"
+                                                            class="popular-img">
+                                                    </div>
+                                                    Best Deals
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recomendation__slide-title">The Old Lighthouse</div>
+                                        <div class="recomendation__slide-price">$ 44.000.000</div>
+                                        <div class="recomendation__slide-owner">
+                                            <div class="recomendation__slide-avatar">
+                                                <img src="./images/owner/owner3.jpg" alt="owner"
+                                                    class="recomendation__slide-photo">
+                                            </div>
+                                            <div class="recomendation__slide-profile">
+                                                <div class="recomendation__slide-name">Ronald Richards</div>
+                                                <div class="recomendation__slide-location">Santa Ana, Illinois
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="recomendation__slide swiper-slide" data="house">
+                                        <div class="recomendation__slide-photo">
+                                            <div class="recomendation__slide-img">
+                                                <img src="./images/houses/house1.jpg" alt="house"
+                                                    class="recomendation__swiper-pic">
+                                            </div>
+                                            <div class="recomendation__slide-tag">
+                                                <div class="popular">
+                                                    <div class="popular-pic">
+                                                        <img src="./images/icons/popular.svg" alt="tagpic"
+                                                            class="popular-img">
+                                                    </div>
+                                                    Popular
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recomendation__slide-title">Roselands House</div>
+                                        <div class="recomendation__slide-price">$ 35.000.000</div>
+                                        <div class="recomendation__slide-owner">
+                                            <div class="recomendation__slide-avatar">
+                                                <img src="./images/owner/owner1.jpg" alt="owner"
+                                                    class="recomendation__slide-photo">
+                                            </div>
+                                            <div class="recomendation__slide-profile">
+                                                <div class="recomendation__slide-name">Dianne Russell</div>
+                                                <div class="recomendation__slide-location">Manchester, Kentucky</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recomendation__slide swiper-slide" data="villa">
+                                        <div class="recomendation__slide-photo">
+                                            <div class="recomendation__slide-img">
+                                                <img src="./images/houses/house2.jpg" alt="house"
+                                                    class="recomendation__swiper-pic">
+                                            </div>
+                                            <div class="recomendation__slide-tag">
+                                                <div class="popular new">
+                                                    <div class="popular-pic">
+                                                        <img src="./images/icons/new.svg" alt="tagpic"
+                                                            class="popular-img">
+                                                    </div>
+                                                    New House
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recomendation__slide-title">Woodlandside</div>
+                                        <div class="recomendation__slide-price">$ 20.000.000</div>
+                                        <div class="recomendation__slide-owner">
+                                            <div class="recomendation__slide-avatar">
+                                                <img src="./images/owner/owner2.jpg" alt="owner"
+                                                    class="recomendation__slide-photo">
+                                            </div>
+                                            <div class="recomendation__slide-profile">
+                                                <div class="recomendation__slide-name">Robert Fox</div>
+                                                <div class="recomendation__slide-location">Dr. San Jose, South Dakota
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recomendation__slide swiper-slide" data="apartment">
+                                        <div class="recomendation__slide-photo">
+                                            <div class="recomendation__slide-img">
+                                                <img src="./images/houses/house3.jpg" alt="house"
+                                                    class="recomendation__swiper-pic">
+                                            </div>
+                                            <div class="recomendation__slide-tag">
+                                                <div class="popular best">
+                                                    <div class="popular-pic">
+                                                        <img src="./images/icons/money.svg" alt="tagpic"
+                                                            class="popular-img">
+                                                    </div>
+                                                    Best Deals
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recomendation__slide-title">The Old Lighthouse</div>
+                                        <div class="recomendation__slide-price">$ 44.000.000</div>
+                                        <div class="recomendation__slide-owner">
+                                            <div class="recomendation__slide-avatar">
+                                                <img src="./images/owner/owner3.jpg" alt="owner"
+                                                    class="recomendation__slide-photo">
+                                            </div>
+                                            <div class="recomendation__slide-profile">
+                                                <div class="recomendation__slide-name">Ronald Richards</div>
+                                                <div class="recomendation__slide-location">Santa Ana, Illinois
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="recomendation__slide swiper-slide" data="house">
+                                        <div class="recomendation__slide-photo">
+                                            <div class="recomendation__slide-img">
+                                                <img src="./images/houses/house1.jpg" alt="house"
+                                                    class="recomendation__swiper-pic">
+                                            </div>
+                                            <div class="recomendation__slide-tag">
+                                                <div class="popular">
+                                                    <div class="popular-pic">
+                                                        <img src="./images/icons/popular.svg" alt="tagpic"
+                                                            class="popular-img">
+                                                    </div>
+                                                    Popular
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recomendation__slide-title">Roselands House</div>
+                                        <div class="recomendation__slide-price">$ 35.000.000</div>
+                                        <div class="recomendation__slide-owner">
+                                            <div class="recomendation__slide-avatar">
+                                                <img src="./images/owner/owner1.jpg" alt="owner"
+                                                    class="recomendation__slide-photo">
+                                            </div>
+                                            <div class="recomendation__slide-profile">
+                                                <div class="recomendation__slide-name">Dianne Russell</div>
+                                                <div class="recomendation__slide-location">Manchester, Kentucky</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recomendation__slide swiper-slide" data="villa">
+                                        <div class="recomendation__slide-photo">
+                                            <div class="recomendation__slide-img">
+                                                <img src="./images/houses/house2.jpg" alt="house"
+                                                    class="recomendation__swiper-pic">
+                                            </div>
+                                            <div class="recomendation__slide-tag">
+                                                <div class="popular new">
+                                                    <div class="popular-pic">
+                                                        <img src="./images/icons/new.svg" alt="tagpic"
+                                                            class="popular-img">
+                                                    </div>
+                                                    New House
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recomendation__slide-title">Woodlandside</div>
+                                        <div class="recomendation__slide-price">$ 20.000.000</div>
+                                        <div class="recomendation__slide-owner">
+                                            <div class="recomendation__slide-avatar">
+                                                <img src="./images/owner/owner2.jpg" alt="owner"
+                                                    class="recomendation__slide-photo">
+                                            </div>
+                                            <div class="recomendation__slide-profile">
+                                                <div class="recomendation__slide-name">Robert Fox</div>
+                                                <div class="recomendation__slide-location">Dr. San Jose, South Dakota
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recomendation__slide swiper-slide" data="apartment">
                                         <div class="recomendation__slide-photo">
                                             <div class="recomendation__slide-img">
                                                 <img src="./images/houses/house3.jpg" alt="house"
@@ -681,7 +951,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="readytosell__item-btn">
-                                                        <a href="#" class="contact-link">
+                                                        <a href="#" class="contact-link btn-green">
                                                             <div class="contact-link__pic">
                                                                 <img src="./images/icons/phone.svg"
                                                                     class="contact-link__ico"></img>
@@ -766,7 +1036,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="readytosell__item-btn">
-                                                        <a href="#" class="contact-link">
+                                                        <a href="#" class="contact-link btn-green">
                                                             <div class="contact-link__pic">
                                                                 <img src="./images/icons/phone.svg"
                                                                     class="contact-link__ico"></img>
@@ -851,7 +1121,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="readytosell__item-btn">
-                                                        <a href="#" class="contact-link">
+                                                        <a href="#" class="contact-link btn-green">
                                                             <div class="contact-link__pic">
                                                                 <img src="./images/icons/phone.svg"
                                                                     class="contact-link__ico"></img>
@@ -936,7 +1206,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="readytosell__item-btn">
-                                                        <a href="#" class="contact-link">
+                                                        <a href="#" class="contact-link btn-green">
                                                             <div class="contact-link__pic">
                                                                 <img src="./images/icons/phone.svg"
                                                                     class="contact-link__ico"></img>
@@ -1126,7 +1396,7 @@
                             <div class="partnership__header-title frame-title">Find out more about
                                 selling and buying homes</div>
                             <div class="partnership__header-btn">
-                                <a href="#" class="partnership__header-btnlink contact-link">More Artikel</a>
+                                <a href="#" class="partnership__header-btnlink btn-green">More Artikel</a>
                             </div>
                         </div>
                         <div class="partnership__content">
@@ -1248,7 +1518,7 @@
                                             <input name='search' type="email" class="feedback__content-input"
                                                 placeholder="Your email here">
                                         </label>
-                                        <button class='feedback__content-btn' type="submit">Subsribe Now
+                                        <button class='feedback__content-btn btn-green' type="submit">Subsribe Now
                                         </button>
                                     </form>
                                 </div>

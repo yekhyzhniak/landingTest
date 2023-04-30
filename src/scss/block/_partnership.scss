@@ -38,6 +38,11 @@
             max-width: 420px;
             text-align: center;
         }
+        &-btnlink{
+            @include m-phone{
+                width: auto;
+            }
+        }
     }
     &__content{
         position: relative;

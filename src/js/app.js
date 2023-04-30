@@ -100,6 +100,57 @@ document.querySelector('.dropbox-item').onclick = function () {
 }
 
 
+let btn = document.querySelectorAll('.recomendation__btn-link');
+
+btn.forEach(function (element) {
+    element.onclick = closeSlides;
+})
+
+function closeSlides(event) {
+    for (let i = 0; i < btn.length; i++) {
+        btn[i].classList.remove('background')
+    }
+    event.preventDefault();
+    this.classList.add('background');
+
+    let data = this.getAttribute('data');
+
+    let slide = document.querySelectorAll('.recomendation__slide');
+    for (let j = 0; j < slide.length; j++) {
+        slide[j].style.display = 'none';
+    }
+    showSlides(data);
+}
+
+function showSlides(data) {
+    console.log(data)
+    let slide = document.querySelectorAll('.recomendation__slide');
+    for (let j = 0; j < slide.length; j++) {
+        if (slide[j].getAttribute('data') == data) {
+            slide[j].style.display = 'block'
+        }
+    }
+    recomendation.update()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const openingSwiper = new Swiper('.opening__left-slider', {
     slidesPerView: 2,
     autoplay: {
@@ -125,7 +176,6 @@ const openingSwiper = new Swiper('.opening__left-slider', {
 
 
 const recomendation = new Swiper('.recomendation__slider', {
-    loop: true,
     navigation: {
         nextEl: '.swiper-next',
         prevEl: '.swiper-prev',

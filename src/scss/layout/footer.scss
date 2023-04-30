@@ -66,6 +66,10 @@
             justify-content: center;
             align-items: center;
             z-index: 5;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.2);
+            }
         }
         &-link:not(:last-child){
             margin-right: 24px;
@@ -112,6 +116,12 @@
             line-height: 18px;
             text-transform: capitalize;
             color: #888B97;
+            transition: 0.5s;
+            
+            &:hover{
+                font-weight: 700;
+                text-decoration: underline;
+            }
         }
         &-text:not(:last-child){
             margin-bottom: 18px;
